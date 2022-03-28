@@ -485,7 +485,7 @@
                     <div class="content">
                         <div class="content__topbar">
                             <div class="content__topbar-count">Отображаются 1-10 из 301 результатов</div>
-                            <form action="">
+                            <form class="content__topbar-form" action="">
                                 <label for="">
                                     <span class="content__topbar-sorting">Сортировка:</span>
                                 </label>
@@ -770,6 +770,7 @@
         </section>
         <section class="courses">
             <div class="container">
+
                 <h3 class="subtitle">Платные курсы</h3>
                 <div class="courses__search">
                     <form class="courses__form">
@@ -777,6 +778,16 @@
                         <button class="courses__search-btn btn" type="submit">
                             <span>Найти</span>
                         </button>
+                    </form>
+                </div>
+                <div class="courses__sorting">
+                    <form class="content__topbar-form" action="">
+                        <label for="">
+                            <span class="content__topbar-sorting">Сортировка:</span>
+                        </label>
+                        <select size="1" multiple name="">
+                            <option value="">по популярности</option>
+                        </select>
                     </form>
                 </div>
                 <div class="table">
@@ -842,6 +853,16 @@
                         <button class="courses__search-btn btn" type="submit">
                             <span>Найти</span>
                         </button>
+                    </form>
+                </div>
+                <div class="courses__sorting">
+                    <form class="content__topbar-form" action="">
+                        <label for="">
+                            <span class="content__topbar-sorting">Сортировка:</span>
+                        </label>
+                        <select size="1" multiple name="">
+                            <option value="">по популярности</option>
+                        </select>
                     </form>
                 </div>
                 <div class="table">
