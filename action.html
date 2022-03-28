@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB-action</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <ul class="header__top-list">
+                    <li class="header__top-tem">
+                        <a class="header__top-link" href="">RB.RU</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link" href="">EVENTS</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link" href="">CHANCE</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link" href="">data</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link" href="">PIPELINE</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link header__top-link-active" href="">courses</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="heading">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="menu" id="menuBox">
+                    <div class="heading__links">
+                        <a class="heading__links-link" href="">Тест на профессию</a>
+                        <a class="heading__links-link" href="">Акции</a>
+                        <a class="heading__links-link" href="">Отзывы</a>
+                    </div>
+                    <div class="heading__button">
+                        <div class="heading__button-head">
+                            <button onclick="allFunction()" class="heading__button-head dropbtn">Все курсы
+                                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                            </button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="dropdown-content__left" id="dropdownContentL">
+                                <button onclick="listFunction()" class="dropdown-content__btn">
+                                    Программирование
+                                    <svg class="dropdown-content__btn-icon" width="9" height="14" viewBox="0 0 9 14"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.986084 12.355L5.9394 7L0.986084 1.645L2.51101 -1.19209e-07L9.00007 7L2.51101 14L0.986084 12.355Z" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-content__btn">
+                                    Управление
+                                    <svg class="dropdown-content__btn-icon" width="9" height="14" viewBox="0 0 9 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.986084 12.355L5.9394 7L0.986084 1.645L2.51101 -1.19209e-07L9.00007 7L2.51101 14L0.986084 12.355Z" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-content__btn">
+                                    Дизайн
+                                    <svg class="dropdown-content__btn-icon" width="9" height="14" viewBox="0 0 9 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.986084 12.355L5.9394 7L0.986084 1.645L2.51101 -1.19209e-07L9.00007 7L2.51101 14L0.986084 12.355Z" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-content__btn">
+                                    Маркетинг
+                                    <svg class="dropdown-content__btn-icon" width="9" height="14" viewBox="0 0 9 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.986084 12.355L5.9394 7L0.986084 1.645L2.51101 -1.19209e-07L9.00007 7L2.51101 14L0.986084 12.355Z" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-content__btn">
+                                    Аналитика
+                                    <svg class="dropdown-content__btn-icon" width="9" height="14" viewBox="0 0 9 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.986084 12.355L5.9394 7L0.986084 1.645L2.51101 -1.19209e-07L9.00007 7L2.51101 14L0.986084 12.355Z" />
+                                    </svg>
+                                </button>
+                                <button class="dropdown-content__btn">
+                                    Создание контента
+                                    <svg class="dropdown-content__btn-icon" width="9" height="14" viewBox="0 0 9 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.986084 12.355L5.9394 7L0.986084 1.645L2.51101 -1.19209e-07L9.00007 7L2.51101 14L0.986084 12.355Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown-content__right" id="dropdownContentR">
+                                <button class="dropdown-content-right-back">
+                                    <img class="dropdown-content-right-back-icon" src="images/arrow-back.svg"
+                                        alt="back">
+                                    <span class="dropdown-content-right-back-text">Назад</span>
+                                </button>
+                                <div class="dropdown-content-right-inner">
+                                    <a href="" class="dropdown-content-link">Все курсы по программированию</a>
+                                    <a href="" class="dropdown-content-link">Web-разработка</a>
+                                    <a href="" class="dropdown-content-link">Python-разработка</a>
+                                    <a href="" class="dropdown-content-link">JavaScript-разработка</a>
+                                    <a href="" class="dropdown-content-link">Мобильная разработка</a>
+                                    <a href="" class="dropdown-content-link">Frontend-разработка</a>
+                                    <a href="" class="dropdown-content-link"> Системное администрирование</a>
+                                    <a href="" class="dropdown-content-link">Разработка игр</a>
+                                    <a href="" class="dropdown-content-link">Java-разработка</a>
+                                    <a href="" class="dropdown-content-link">Верстка на HTML/CSS</a>
+                                    <a href="" class="dropdown-content-link">PHP-разработка</a>
+                                    <a href="" class="dropdown-content-link">QA-тестирование</a>
+                                    <a href="" class="dropdown-content-link">Android-разработка</a>
+                                    <a href="" class="dropdown-content-link">IOS-разработка</a>
+                                    <a href="" class="dropdown-content-link">Разработка игр на Unity</a>
+                                    <a href="" class="dropdown-content-link">Фреймворк ReactJS</a>
+                                    <a href="" class="dropdown-content-link">DevOps</a>
+                                    <a href="" class="dropdown-content-link">Разработка на C#</a>
+                                    <a href="" class="dropdown-content-link">Информационная безопасность</a>
+                                    <a href="" class="dropdown-content-link">Разработка игр на Unreal Engine</a>
+                                    <a href="" class="dropdown-content-link">Фреймворк Django</a>
+                                    <a href="" class="dropdown-content-link">Фреймворк Spring</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <button onclick="menuFunction()" class="hamburger-menu" id="hamburgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="action">
+        <section class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__list-item">
+                        <a class="breadcrumb__list-link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb__list-item">
+                        <a class="breadcrumb__list-link" href="#">Тест</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="container">
+            <h1 class="title">
+                Акции онлайн-школ
+            </h1>
+            <p class="inner__text">
+                Онлайн-школы и образовательные платформы регулярно предлагают
+                скидки для своих учеников и проводят распродажи курсов.
+                Здесь представлены актуальные акции онлайн-школ, следите за обновлениями данного раздела.
+            </p>
+            <div class="action__cards">
+                <div class="action__card">
+                    <div class="action__card-logo">
+                        <a href="#">
+                            <img src="images/card-logo.png" alt="card-logo">
+                        </a>
+                    </div>
+                    <!-- <div class="action__card-wrapper"> -->
+                    <div class="action__card-title">
+                        СКИДКА 45% НА ВСЕ КУРСЫ ПО ПРОМОКОДУ
+                    </div>
+                    <div class="action__card-coursator">COURSATOR</div>
+                    <div class="action__card-bottom">
+                        <a class="action__card-link">skillfactory.ru</a>
+                        <span class="action__card-text">Акция действует до 28 февраля</span>
+                    </div>
+                </div>
+                <div class="action__card">
+                    <div class="action__card-logo">
+                        <a href="#">
+                            <img src="images/card-logo.png" alt="card-logo">
+                        </a>
+                    </div>
+                    <!-- <div class="action__card-wrapper"> -->
+                    <div class="action__card-title">
+                        СКИДКА 45% НА ВСЕ КУРСЫ ПО ПРОМОКОДУ
+                    </div>
+                    <div class="action__card-coursator">COURSATOR</div>
+                    <div class="action__card-bottom">
+                        <a class="action__card-link">skillfactory.ru</a>
+                        <span class="action__card-text">Акция действует до 28 февраля</span>
+                    </div>
+                </div>
+                <div class="action__card">
+                    <div class="action__card-logo">
+                        <a href="#">
+                            <img src="images/card-logo.png" alt="card-logo">
+                        </a>
+                    </div>
+                    <!-- <div class="action__card-wrapper"> -->
+                    <div class="action__card-title">
+                        СКИДКА 45% НА ВСЕ КУРСЫ ПО ПРОМОКОДУ
+                    </div>
+                    <div class="action__card-coursator">COURSATOR</div>
+                    <div class="action__card-bottom">
+                        <a class="action__card-link">skillfactory.ru</a>
+                        <span class="action__card-text">Акция действует до 28 февраля</span>
+                    </div>
+                </div>
+                <div class="action__card">
+                    <div class="action__card-logo">
+                        <a href="#">
+                            <img src="images/card-logo.png" alt="card-logo">
+                        </a>
+                    </div>
+                    <!-- <div class="action__card-wrapper"> -->
+                    <div class="action__card-title">
+                        СКИДКА 45% НА ВСЕ КУРСЫ ПО ПРОМОКОДУ
+                    </div>
+                    <div class="action__card-coursator">COURSATOR</div>
+                    <div class="action__card-bottom">
+                        <a class="action__card-link">skillfactory.ru</a>
+                        <span class="action__card-text">Акция действует до 28 февраля</span>
+                    </div>
+                </div>
+                <div class="action__card">
+                    <div class="action__card-logo">
+                        <a href="#">
+                            <img src="images/card-logo.png" alt="card-logo">
+                        </a>
+                    </div>
+                    <!-- <div class="action__card-wrapper"> -->
+                    <div class="action__card-title">
+                        СКИДКА 45% НА ВСЕ КУРСЫ ПО ПРОМОКОДУ
+                    </div>
+                    <div class="action__card-coursator">COURSATOR</div>
+                    <div class="action__card-bottom">
+                        <a class="action__card-link">skillfactory.ru</a>
+                        <span class="action__card-text">Акция действует до 28 февраля</span>
+                    </div>
+                </div>
+                <div class="action__card">
+                    <div class="action__card-logo">
+                        <a href="#">
+                            <img src="images/card-logo.png" alt="card-logo">
+                        </a>
+                    </div>
+                    <!-- <div class="action__card-wrapper"> -->
+                    <div class="action__card-title">
+                        СКИДКА 45% НА ВСЕ КУРСЫ ПО ПРОМОКОДУ
+                    </div>
+                    <div class="action__card-coursator">COURSATOR</div>
+                    <div class="action__card-bottom">
+                        <a class="action__card-link">skillfactory.ru</a>
+                        <span class="action__card-text">Акция действует до 28 февраля</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">О наc</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#"> Отзывы о школах</a>
+                    </li>
+                </ul>
+                <ul class="footer__social">
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item facebook">
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item telegram">
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item vkontakte">
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item twitter">
+                        </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item yandex"></a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item odnoklassniki"></a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item instagram"></a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item tiktok"> </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="" class="footer__social-item viber"> </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__caption">
+                <p class="footer__caption-text">
+                    Данные предоставлены партнером
+                    <a class="caption__link" href="https://coursator.online/">coursator.online</a>
+                </p>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer-copyright"> © 2022 coursator.online</div>
+                <p class="footer__text"> Политика конфиденциальности</p>
+                <p class="footer__text">Пользовательское соглашение</p>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
