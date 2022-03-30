@@ -1943,6 +1943,9 @@ select {
 .ottehr {
   margin-bottom: 50px;
 }
+.ottehr .subtitle {
+  margin-bottom: 30px;
+}
 
 .scroll__box {
   overflow-x: hidden;
