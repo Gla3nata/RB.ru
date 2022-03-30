@@ -11,10 +11,10 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header__wrapper">
             <div class="header__top">
                 <ul class="header__top-list">
-                    <li class="header__top-tem">
+                    <li class="header__top-item">
                         <a class="header__top-link" href="">RB.RU</a>
                     </li>
                     <li class="header__top-item">
@@ -29,15 +29,15 @@
                     <li class="header__top-item">
                         <a class="header__top-link" href="">PIPELINE</a>
                     </li>
-                    <li class="header__top-item">
-                        <a class="header__top-link header__top-link-active" href="">courses</a>
+                    <li class="header__top-item header__top-item-active">
+                        <a class="header__top-link" href="">courses</a>
                     </li>
                 </ul>
             </div>
             <div class="heading">
                 <div class="logo">
                     <a href="#">
-                        <img src="images/logo.png" alt="logo">
+                        <img src="images/logo.svg" alt="logo">
                     </a>
                 </div>
                 <nav class="menu" id="menuBox">
@@ -54,7 +54,8 @@
                         </div>
                         <div id="myDropdown" class="dropdown-content">
                             <div class="dropdown-content__left" id="dropdownContentL">
-                                <button onclick="listFunction()" class="dropdown-content__btn">
+                                <button onclick="listFunction()"
+                                    class="dropdown-content__btn dropdown-content__btn-active">
                                     Программирование
                                     <svg class="dropdown-content__btn-icon" width="9" height="14" viewBox="0 0 9 14"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -155,6 +156,8 @@
                     <div class="courses__links">
                         <a href="" class="courses__link">Product-менеджмент</a>
                         <a href="" class="courses__link">HR и управление персоналом</a>
+                        <a href="" class="courses__link">Управление бизнесом</a>
+                        <a href="" class="courses__link">Product-менеджмент</a>
                     </div>
                     <div class="course__box-wrapper">
                         <p class="content__box-price">21 100 ₽/курс</p>
@@ -183,147 +186,158 @@
                                 связью от преподавателей
                             </p>
                         </div>
-                        <button class="btn test-block__btn">Курс на skillfactory.ru</button>
+                        <div class="content__box-top rating__box">
+                            <img src="images/star.svg" alt="star">
+                            <a class="content__box-rating" href="">4</a>
+                            <a class="content__box-reviews" href="">(19)</a>
+                        </div>
+                        <button class="btn">Курс на skillfactory.ru</button>
                     </div>
                 </div>
                 <h2 class="title">
                     Похожие курсы
                 </h2>
                 <div class="course__content">
-                    <div class="content__forms">
-                        <div class="content__box">
-                            <div class="content__box-head">
-                                <img src="images/courses-box.jpg" alt="">
-                                <div class="content__box-categories">
-                                    <p class="content__box-category">Product-менеджмент</p>
-                                    <p class="content__box-category">Product-менеджмент</p>
-                                    <p class="content__box-category">Менеджмент</p>
-                                </div>
-                            </div>
-                            <div class="content__box-heading">
-                                <h3 class="content__box-title">Логистика</h3>
-                                <div class="content__box-top">
-                                    <img src="images/star.svg" alt="star">
-                                    <a class="content__box-rating" href="">4</a>
-                                    <a class="content__box-reviews" href="">(8)</a>
-                                </div>
-                            </div>
-                            <a class="content__box-more" href="">Подробнее о курсе</a>
-                            <hr>
-                            <div class="content__box-main">
-                                <p class="content__box-text">
-                                    <span>Начало:</span> В любой момент
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Длительность:</span>4 месяца
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Занятия:</span> 12 лекций
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Формат:</span> Вебинары
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Особенности:</span> Личная обратная связь по домашним заданиям
-                                </p>
-                            </div>
-                            <div class="content__box-wrapper">
-                                <p class="content__box-price">21 100 ₽/курс</p>
-                                <p class="content__box-rassrochka">Рассрочки нет</p>
-                            </div>
-                            <div class="btn content__box-link">
-                                Курс на skillfactory.ru
+
+                    <div class="content__box">
+                        <div class="content__box-head">
+                            <img class="content__box-img" src="images/courses-box.jpg" alt="">
+                            <div class="content__box-categories">
+                                <a href="" class="content__box-category">Product-менеджмент</a>
+                                <a href="" class="content__box-category">Product-менеджмент</a>
+                                <a href="" class="content__box-category">Менеджмент</a>
                             </div>
                         </div>
-                        <div class="content__box">
-                            <div class="content__box-head">
-                                <img src="images/courses-box.jpg" alt="">
-                                <div class="content__box-categories">
-                                    <p class="content__box-category">Product-менеджмент</p>
-                                    <p class="content__box-category">Product-менеджмент</p>
-                                    <p class="content__box-category">Менеджмент</p>
-                                </div>
-                            </div>
-                            <div class="content__box-heading">
-                                <h3 class="content__box-title">Логистика</h3>
-                                <div class="content__box-top">
-                                    <img src="images/star.svg" alt="star">
-                                    <a class="content__box-rating" href="">4</a>
-                                    <a class="content__box-reviews" href="">(8)</a>
-                                </div>
-                            </div>
-                            <a class="content__box-more" href="">Подробнее о курсе</a>
-                            <hr>
-                            <div class="content__box-main">
-                                <p class="content__box-text">
-                                    <span>Начало:</span> В любой момент
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Длительность:</span>4 месяца
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Занятия:</span> 12 лекций
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Формат:</span> Вебинары
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Особенности:</span> Личная обратная связь по домашним заданиям
-                                </p>
-                            </div>
-                            <div class="content__box-wrapper">
-                                <p class="content__box-price">21 100 ₽/курс</p>
-                                <p class="content__box-rassrochka">Рассрочки нет</p>
-                            </div>
-                            <div class="btn content__box-link">
-                                Курс на skillfactory.ru
+                        <div class="content__box-heading">
+                            <a href="" class="content__box-title">Логистика</a>
+                            <div class="content__box-top">
+                                <img src="images/star.svg" alt="star">
+                                <a class="content__box-rating" href="">4</a>
+                                <a class="content__box-reviews" href="">(8)</a>
                             </div>
                         </div>
-                        <div class="content__box">
-                            <div class="content__box-head">
-                                <img src="images/courses-box.jpg" alt="">
-                                <div class="content__box-categories">
-                                    <p class="content__box-category">Product-менеджмент</p>
-                                    <p class="content__box-category">Product-менеджмент</p>
-                                    <p class="content__box-category">Менеджмент</p>
-                                </div>
-                            </div>
-                            <div class="content__box-heading">
-                                <h3 class="content__box-title">Логистика</h3>
-                                <div class="content__box-top">
-                                    <img src="images/star.svg" alt="star">
-                                    <a class="content__box-rating" href="">4</a>
-                                    <a class="content__box-reviews" href="">(8)</a>
-                                </div>
-                            </div>
-                            <a class="content__box-more" href="">Подробнее о курсе</a>
-                            <hr>
-                            <div class="content__box-main">
-                                <p class="content__box-text">
-                                    <span>Начало:</span> В любой момент
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Длительность:</span>4 месяца
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Занятия:</span> 12 лекций
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Формат:</span> Вебинары
-                                </p>
-                                <p class="content__box-text">
-                                    <span>Особенности:</span> Личная обратная связь по домашним заданиям
-                                </p>
-                            </div>
-                            <div class="content__box-wrapper">
-                                <p class="content__box-price">21 100 ₽/курс</p>
-                                <p class="content__box-rassrochka">Рассрочки нет</p>
-                            </div>
-                            <div class="btn content__box-link">
+                        <a class="content__box-more" href="">Подробнее о курсе</a>
+                        <hr>
+                        <div class="content__box-main">
+                            <p class="content__box-text">
+                                <span>Начало:</span> В любой момент
+                            </p>
+                            <p class="content__box-text">
+                                <span>Длительность:</span>4 месяца
+                            </p>
+                            <p class="content__box-text">
+                                <span>Занятия:</span> 12 лекций
+                            </p>
+                            <p class="content__box-text">
+                                <span>Формат:</span> Вебинары
+                            </p>
+                            <p class="content__box-text">
+                                <span>Особенности:</span> Личная обратная связь по домашним заданиям
+                            </p>
+                        </div>
+                        <div class="content__box-wrapper">
+                            <p class="content__box-price">21 100 ₽/курс</p>
+                            <p class="content__box-rassrochka">Рассрочки нет</p>
+                        </div>
+                        <div class="content__box-btn">
+                            <a href="" class="btn content__box-link">
                                 Курс на skillfactory.ru
-                            </div>
+                            </a>
                         </div>
                     </div>
+                    <div class="content__box">
+                        <div class="content__box-head">
+                            <img class="content__box-img" src="images/courses-box.jpg" alt="">
+                            <div class="content__box-categories">
+                                <a href="" class="content__box-category">Product-менеджмент</a>
+                                <a href="" class="content__box-category">Product-менеджмент</a>
+                                <a href="" class="content__box-category">Менеджмент</a>
+                            </div>
+                        </div>
+                        <div class="content__box-heading">
+                            <a href="" class="content__box-title">Логистика</a>
+                            <div class="content__box-top">
+                                <img src="images/star.svg" alt="star">
+                                <a class="content__box-rating" href="">4</a>
+                                <a class="content__box-reviews" href="">(8)</a>
+                            </div>
+                        </div>
+                        <a class="content__box-more" href="">Подробнее о курсе</a>
+                        <hr>
+                        <div class="content__box-main">
+                            <p class="content__box-text">
+                                <span>Начало:</span> В любой момент
+                            </p>
+                            <p class="content__box-text">
+                                <span>Длительность:</span>4 месяца
+                            </p>
+                            <p class="content__box-text">
+                                <span>Занятия:</span> 12 лекций
+                            </p>
+                            <p class="content__box-text">
+                                <span>Формат:</span> Вебинары
+                            </p>
+                            <p class="content__box-text">
+                                <span>Особенности:</span> Личная обратная связь по домашним заданиям
+                            </p>
+                        </div>
+                        <div class="content__box-wrapper">
+                            <p class="content__box-price">21 100 ₽/курс</p>
+                            <p class="content__box-rassrochka">Рассрочки нет</p>
+                        </div>
+                        <div class="content__box-btn">
+                            <a href="" class="btn content__box-link">
+                                Курс на skillfactory.ru
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content__box">
+                        <div class="content__box-head">
+                            <img class="content__box-img" src="images/courses-box.jpg" alt="">
+                            <div class="content__box-categories">
+                                <a href="" class="content__box-category">Product-менеджмент</a>
+                                <a href="" class="content__box-category">Product-менеджмент</a>
+                                <a href="" class="content__box-category">Менеджмент</a>
+                            </div>
+                        </div>
+                        <div class="content__box-heading">
+                            <a href="" class="content__box-title">Логистика</a>
+                            <div class="content__box-top">
+                                <img src="images/star.svg" alt="star">
+                                <a class="content__box-rating" href="">4</a>
+                                <a class="content__box-reviews" href="">(8)</a>
+                            </div>
+                        </div>
+                        <a class="content__box-more" href="">Подробнее о курсе</a>
+                        <hr>
+                        <div class="content__box-main">
+                            <p class="content__box-text">
+                                <span>Начало:</span> В любой момент
+                            </p>
+                            <p class="content__box-text">
+                                <span>Длительность:</span>4 месяца
+                            </p>
+                            <p class="content__box-text">
+                                <span>Занятия:</span> 12 лекций
+                            </p>
+                            <p class="content__box-text">
+                                <span>Формат:</span> Вебинары
+                            </p>
+                            <p class="content__box-text">
+                                <span>Особенности:</span> Личная обратная связь по домашним заданиям
+                            </p>
+                        </div>
+                        <div class="content__box-wrapper">
+                            <p class="content__box-price">21 100 ₽/курс</p>
+                            <p class="content__box-rassrochka">Рассрочки нет</p>
+                        </div>
+                        <div class="content__box-btn">
+                            <a href="" class="btn content__box-link">
+                                Курс на skillfactory.ru
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

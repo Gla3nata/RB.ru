@@ -11,10 +11,10 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header__wrapper">
             <div class="header__top">
                 <ul class="header__top-list">
-                    <li class="header__top-tem">
+                    <li class="header__top-item">
                         <a class="header__top-link" href="">RB.RU</a>
                     </li>
                     <li class="header__top-item">
@@ -29,15 +29,15 @@
                     <li class="header__top-item">
                         <a class="header__top-link" href="">PIPELINE</a>
                     </li>
-                    <li class="header__top-item">
-                        <a class="header__top-link header__top-link-active" href="">courses</a>
+                    <li class="header__top-item header__top-item-active">
+                        <a class="header__top-link" href="">courses</a>
                     </li>
                 </ul>
             </div>
             <div class="heading">
                 <div class="logo">
                     <a href="#">
-                        <img src="images/logo.png" alt="logo">
+                        <img src="images/logo.svg" alt="logo">
                     </a>
                 </div>
                 <nav class="menu" id="menuBox">
@@ -54,7 +54,8 @@
                         </div>
                         <div id="myDropdown" class="dropdown-content">
                             <div class="dropdown-content__left" id="dropdownContentL">
-                                <button onclick="listFunction()" class="dropdown-content__btn">
+                                <button onclick="listFunction()"
+                                    class="dropdown-content__btn dropdown-content__btn-active">
                                     Программирование
                                     <svg class="dropdown-content__btn-icon" width="9" height="14" viewBox="0 0 9 14"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +151,7 @@
             <div class="container">
                 <ul class="breadcrumb__list">
                     <li class="breadcrumb__list-item">
-                        <a class="breadcrumb__list-link" href="#">Главная</a>
+                        <a class="breadcrumb__list-link" href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb__list-item">
                         <a class="breadcrumb__list-link" href="#">Отзывы</a>
@@ -373,6 +374,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
