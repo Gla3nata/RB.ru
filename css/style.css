@@ -664,6 +664,7 @@ main {
 }
 .reviews__inner .title {
   border: none;
+  margin: 0;
 }
 .reviews__wrapper {
   display: -webkit-box;
