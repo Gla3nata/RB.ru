@@ -338,6 +338,10 @@ main {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 1;
   padding: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 0;
 }
 .dropdown-content__right {
   border-left: 1px solid #ad475c;
@@ -1580,7 +1584,7 @@ select {
 }
 .sidebar__box-btn {
   max-width: 100%;
-  margin-top: 74px;
+  margin-top: 40px;
 }
 
 .handle-left {
@@ -2148,10 +2152,6 @@ select {
   }
 
   .dropdown-content {
-    top: 0;
-  }
-
-  .dropdown-content {
     background: transparent;
     border: none;
     border-radius: 0;
@@ -2164,14 +2164,8 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    opacity: 1;
-    pointer-events: auto;
-    position: relative;
     top: 0;
+    width: auto;
   }
 
   .dropdown-content__left {
@@ -2273,6 +2267,15 @@ select {
             justify-content: space-between;
   }
 
+  main {
+    padding-top: 90px;
+  }
+
+  .logo {
+    width: auto;
+    padding-left: 20px;
+  }
+
   .btn__find {
     max-width: 160px;
   }
@@ -2284,11 +2287,6 @@ select {
 
   .content__forms {
     padding: 0;
-  }
-
-  .logo {
-    width: auto;
-    padding-left: 20px;
   }
 
   .categories {
@@ -2356,10 +2354,6 @@ select {
   }
 }
 @media (max-width: 900px) {
-  main {
-    padding-top: 130px;
-  }
-
   .filters__button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2468,10 +2462,6 @@ select {
             justify-content: center;
   }
 
-  main {
-    padding-top: 110px;
-  }
-
   .text-block__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2525,7 +2515,7 @@ select {
 
   .rating {
     position: absolute;
-    bottom: 0;
+    top: 15px;
     right: 0;
     border: none;
   }
@@ -2543,13 +2533,19 @@ select {
   .table__item-rating::before {
     background-size: 50%;
     background-repeat: no-repeat;
-    left: -15px;
+    left: -9px;
   }
 
   .table__head-column-1,
 .column-1,
 .column-2 {
     min-height: 48px;
+  }
+
+  .table .table__price {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .column-4 {
@@ -2601,6 +2597,7 @@ select {
   .table__item.column-4,
 .table__item.column-6 {
     border-bottom: 0;
+    padding-bottom: 0;
   }
 
   .table__item.column-5,
@@ -2995,6 +2992,11 @@ select {
   .test-block__btn {
     width: 165px;
     margin: 0;
+  }
+
+  .test-block__button {
+    max-width: 120px;
+    margin-right: 9px;
   }
 
   .vacancy__wrapper {
