@@ -6,3 +6,4 @@
 4. страница с отзывами
 5. страница акции
 https://rb.ru/kursy/
+https://gla3nata.github.io/RB.ru/ 
